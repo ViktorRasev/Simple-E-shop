@@ -40,13 +40,26 @@ header {
 .search-bar-form {
   width: 100%;
   padding-bottom: 1rem;
+  margin: 0 10%;
+}
+
+.search-field {
+  position: relative;
+}
+
+.search-field img {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 1rem;
+  height: 1rem;
 }
 
 .search-bar-input {
   height: 2rem;
   width: 80%;
-  padding-left: 0.5rem;
-  margin: 0 10%;
+  padding-left: 2rem;
+  margin: 0;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -57,7 +70,7 @@ header {
     position: absolute;
     width: 60%;
     top: 15px;
-    left: 170px;
+    left: 215px;
     padding: 0;
     margin: 0;
   }

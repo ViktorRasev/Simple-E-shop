@@ -65,7 +65,7 @@ header {
 
 .products {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 @media (min-width: 400px) {

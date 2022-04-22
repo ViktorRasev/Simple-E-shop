@@ -10,70 +10,146 @@
   </head>
   <body>
     <header>
-      
       <div class="header-wrapper">
         <!-- WRAPPER FOR LOGO + SHOPPING CART  -->
-      <div class="header-logo-cart">
-        <a href="#" class="main-logo"
-          ><img src="images/Random_eshop-Logo+Text.png" alt=""
-        /></a>
-        <a href="#" class="shopping-cart"
-          ><img
-            src="images/shopping-cart-outline.svg"
-            alt="shopping cart"
-        /></a>
+        <div class="header-logo-cart">
+          <a href="index.html" class="main-logo"
+            ><img src="images/Random_eshop-Logo+Text.png" alt=""
+          /></a>
+          <a href="cart.html" class="shopping-cart"
+            ><img src="images/shopping-cart-outline.svg" alt="shopping cart"
+          /></a>
+        </div>
+        <!-- SEACRCH FORM  -->
+        <form class="search-bar-form">
+          <div class="search-field">
+            <img
+              src="images/Magnifying_glass_icon.svg"
+              alt="Magnifying_glass"
+            />
+            <input type="text" class="search-bar-input" placeholder="Search" />
+          </div>
+        </form>
       </div>
-      <!-- SEACRCH FORM  -->
-      <form class="search-bar-form">
-        <div class="search-field">
-        <img src="images/Magnifying_glass_icon.svg" alt="Magnifying_glass">
-        <input  type="text" class="search-bar-input" placeholder="Search" />
-      </div>
-      </form>
-    </div>
     </header>
     <main>
       <section class="products">
-        <a href="#">
-          <img src="images/randomimage.jpg" alt="" class="Product-n1">
-          <h2>Product1</h2>
+        <div >
+        <a href="#" class="poduct-link">
+          <h2>Sukhoi Su-37</h2>
+          <h4>"Terminator"</h4>
+          <img src="images/Aircrafts/Su-37.png" 
+          onmouseover="this.src='images/Aircrafts/Blueprint-sukhoi_su_37.jpg'"
+          onmouseout="this.src='images/Aircrafts/Su-37.png'"
+          class="Product-n1" />
+            <div class="price_cart">
+            <h3>$55M</h3>
+            <a href="" class="button">Button</a>
+          </div>
+          </div>
+      </div>
         </a>
-        <a href="#">
-          <img src="images/randomimage.jpg" alt="" class="Product-n2">
-          <h2>Product2</h2>
+        <a href="#" class="poduct-link">
+          <h2>Sukhoi Su-47</h2>
+          <h4>"Berkut"</h4>
+          <img src="images/Aircrafts/Su-47.jpg" 
+          onmouseover="this.src='images/Aircrafts/Blueprin-Su-47 .jpg'"
+          onmouseout="this.src='images/Aircrafts/Su-47.jpg'"
+          class="Product-n2"/>
+          <div class="price_cart">
+          <h3>$70M</h3>
+          <a href=""></a>
+        </div>
         </a>
-        <a href="#">
-          <img src="images/randomimage.jpg" alt="" class="Product-n3">
-          <h2>Product3</h2>
+        <a href="#" class="poduct-link">
+          <h2>Sukhoi Su-57</h2>
+          <h4>"Felon"</h4>
+          <img
+            src="images/Aircrafts/su57-serial.jpg"
+            onmouseover="this.src='images/Aircrafts/Blueprint-Su-57.png'"
+            onmouseout="this.src='images/Aircrafts/su57-serial.jpg'"
+            class="Product-n3"
+          />
+          <div class="price_cart">
+          <h3>$100M</h3>
+        </div>
         </a>
-        <a href="#">
-          <img src="images/randomimage.jpg" alt="" class="Product-n4"> 
-          <h2>Product4</h2>
+        <a href="#" class="poduct-link">
+          
+          <h2>F-22 Raptor</h2>
+          <h4>""</h4>
+          <img src="images/Aircrafts/f-22.png"
+          onmouseover="this.src='images/Aircrafts/Blueprint-F22 .png'"
+          onmouseout="this.src='images/Aircrafts/f-22.png'"
+          class="Product-n4" />
+          <div class="test">
+          <h3>$150M</h3>
+          <a href=""></a>
+          </div>
         </a>
-        <a href="#">
-          <img src="images/randomimage.jpg" alt="" class="Product-n5">
-          <h2>Product5</h2>
+        <a href="#" class="poduct-link">
+          <h2>F-14 Tomcat</h2>
+          <h4>""</h4>
+          <img
+            src="images/Aircrafts/F14.png"
+            onmouseover="this.src='images/Aircrafts/Blueprint-F14.jpg'"
+            onmouseout="this.src='images/Aircrafts/F14.png'"
+            class="Product-n5"
+          />
+          <div class="price_cart">
+          <h3>$50M</h3>
+        </div>
         </a>
-        <a href="#">
-          <img src="images/randomimage.jpg" alt="" class="Product-n6">
-          <h2>Product6</h2>
+        <a href="#" class="poduct-link">
+          <h2>F-16 Fighting Falcon</h2>
+          <h4>"Viper</h4>
+          <img src="images/Aircrafts/F16.jpg" 
+          onmouseover="this.src='images/Aircrafts/Blueprint-F16.jpg'"
+          onmouseout="this.src='images/Aircrafts/F16.jpg'"
+          class="Product-n6" />
+          <div class="price_cart">
+          <h3>$30M</h3>
+        </div>
         </a>
-        <a href="#">
-          <img src="images/randomimage.jpg" alt="" class="Product-n7">
-          <h2>Product7</h2>
+        <a href="#" class="poduct-link">
+          <h2>JAS 39 Gripen</h2>
+          <h4>""</h4>
+          <img
+            src="images/Aircrafts/Saab-gripen.jpg"
+            onmouseover="this.src='images/Aircrafts/Blueprint-jas39-Gripen.png'"
+            onmouseout="this.src='images/Aircrafts/Saab-gripen.jpg'"
+            class="Product-n7"
+          />
+          <div class="price_cart">
+          <h3>$40M</h3>
+        </div>
         </a>
-        <a href="#">
-          <img src="images/randomimage.jpg" alt="" class="Product-n8"> 
-          <h2>Product8</h2>
+        <a href="#" class="poduct-link">
+          <h2>Eurofighter Typhoon</h2>
+          <h4>""</h4>
+          <img
+            src="images/Aircrafts/Eurofighter-Typhoon.png"
+            onmouseover="this.src='images/Aircrafts/Blueprint-Eurofighter-typhoon.jpg'"
+            onmouseout="this.src='images/Aircrafts/Eurofighter-Typhoon.png'"
+            class="Product-n8"
+          />
+          <div class="price_cart">
+          <h3>$125M</h3>
+        </div>
         </a>
-        <a href="#">
-          <img src="images/randomimage.jpg" alt="" class="Product-n9">
-          <h2>Product9</h2>
+        <a href="#" class="poduct-link">
+          <h2>Mig-29</h2>
+          <h4>"Fulcrum"</h4>
+          <img src="images/Aircrafts/Mig29.png"
+          onmouseover="this.src='images/Aircrafts/BLueprint-mig29.png'"
+          onmouseout="this.src='images/Aircrafts/Mig29.png'"
+          class="Product-n9" />
+          <div class="price_cart">
+          <h3>$6M</h3>
+        </div>
         </a>
-    </section>
-    <footer>
-
-    </footer>
+      </section>
+      <footer></footer>
     </main>
     <script src="app.js"></script>
   </body>

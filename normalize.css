@@ -41,6 +41,15 @@
     font-size: 2em;
     margin: 0.67em 0;
   }
+
+  h2{
+    margin: 10px auto 0 auto;
+  }
+  h4{
+    margin: 0 auto 10px auto;
+    font-style: italic;
+    font-weight: 400;
+  }
   
   /* Grouping content
      ========================================================================== */

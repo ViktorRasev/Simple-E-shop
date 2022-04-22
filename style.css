@@ -38,9 +38,12 @@ header {
 }
 
 .search-bar-form {
-  width: 90%;
+  width: 100%;
   padding-bottom: 1rem;
-  margin: 0 10%;
+  padding-left: 15%;
+  margin: 0 ;
+  
+  
 }
 
 .search-field {

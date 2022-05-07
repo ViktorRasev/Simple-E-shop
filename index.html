@@ -16,7 +16,10 @@
       <!-- WRAPPER FOR LOGO + SHOPPING CART  -->
       <div class="header-logo-cart">
         <a href="index.html" class="main-logo"><img src="images/Aviato-Logo.png" alt="" /></a>
-        <a href="cart.html" class="shopping-cart"><img src="images/shopping-cart-outline.svg" alt="shopping cart" /></a>
+        <div class="cart-and-amount">
+        <button class="shopping-cart"><img src="images/shopping-cart-outline.svg"></button>
+        <p class="cart-amount">0</p>
+      </div>
       </div>
       <!-- SEACRCH FORM  -->
       <form class="search-bar-form">
@@ -29,6 +32,7 @@
   </header>
   <main>
     <section class="products">
+<!-- 
       <div class="product product-n1">
         <h2>Sukhoi Su-37</h2>
         <h4>"Terminator"</h4>
@@ -37,7 +41,7 @@
           onmouseout="this.src='images/Aircrafts/Su-37.png'" />
         <div class="price_cart">
           <h3>$55M</h3>
-          <a href="#" class="cart-button">Add to cart</a>
+          <a href="#" class="addto-cart-btn">Add to cart</a>
         </div>
       </div>
       </div>
@@ -45,24 +49,24 @@
       <div class="product product-n2">
         <h2>Sukhoi Su-47</h2>
         <h4>"Berkut"</h4>
-        <img src="images/Aircrafts/Su-47.jpg" 
-        onmouseover="this.src='images/Aircrafts/Blueprin-Su-47 .jpg'"
-          onmouseout="this.src='images/Aircrafts/Su-47.jpg'" />
+        <img src="images/Aircrafts/Su-47.png" 
+        onmouseover="this.src='images/Aircrafts/Blueprin-Su-47.jpg'"
+          onmouseout="this.src='images/Aircrafts/Su-47.png'" />
         <div class="price_cart">
           <h3>$70M</h3>
-          <a href="#" class="cart-button">Add to cart</a>
+          <a href="#" class="addto-cart-btn">Add to cart</a>
         </div>
       </div>
 
       <div class="product product-n3">
         <h2>Sukhoi Su-57</h2>
         <h4>"Felon"</h4>
-        <img src="images/Aircrafts/su57-serial.jpg" 
+        <img src="images/Aircrafts/Su-57.png" 
         onmouseover="this.src='images/Aircrafts/Blueprint-Su-57.png'"
-          onmouseout="this.src='images/Aircrafts/su57-serial.jpg'"/>
+          onmouseout="this.src='images/Aircrafts/Su-57.png'"/>
         <div class="price_cart">
           <h3>$100M</h3>
-          <a href="#" class="cart-button">Add to cart</a>
+          <a href="#" class="addto-cart-btn">Add to cart</a>
         </div>
       </div>
 
@@ -74,7 +78,7 @@
           onmouseout="this.src='images/Aircrafts/f-22.png'" />
         <div class="price_cart">
           <h3>$150M</h3>
-          <a href="#" class="cart-button">Add to cart</a>
+          <a href="#" class="addto-cart-btn">Add to cart</a>
         </div>
       </div>
       <div class="product product-n5">
@@ -83,31 +87,31 @@
         <img src="images/Aircrafts/F14.png" 
         onmouseover="this.src='images/Aircrafts/Blueprint-F14.jpg'"
           onmouseout="this.src='images/Aircrafts/F14.png'"/>
-        <div class="#">
+        <div class="price_cart">
           <h3>$50M</h3>
-          <a href="cart.html" class="cart-button">Add to cart</a>
+          <a href="#" class="addto-cart-btn">Add to cart</a>
         </div>
       </div>
       <div class="product product-n6">
         <h2>F-16 Fighting Falcon</h2>
-        <h4>"Viper</h4>
-        <img src="images/Aircrafts/F16.jpg"
+        <h4>"Viper"</h4>
+        <img src="images/Aircrafts/F16.png"
          onmouseover="this.src='images/Aircrafts/Blueprint-F16.jpg'"
-          onmouseout="this.src='images/Aircrafts/F16.jpg'" />
+          onmouseout="this.src='images/Aircrafts/F16.png'" />
         <div class="price_cart">
           <h3>$30M</h3>
-          <a href="#" class="cart-button">Add to cart</a>
+          <a href="#" class="addto-cart-btn">Add to cart</a>
         </div>
       </div>
       <div class="product product-n7">
         <h2>JAS 39 Gripen</h2>
         <h4>""</h4>
-        <img src="images/Aircrafts/Saab-gripen.jpg" 
+        <img src="images/Aircrafts/Saab-gripen.png" 
         onmouseover="this.src='images/Aircrafts/Blueprint-jas39-Gripen.png'"
-          onmouseout="this.src='images/Aircrafts/Saab-gripen.jpg'" />
+          onmouseout="this.src='images/Aircrafts/Saab-gripen.png'" />
         <div class="price_cart">
           <h3>$40M</h3>
-          <a href="#" class="cart-button">Add to cart</a>
+          <a href="#" class="addto-cart-btn">Add to cart</a>
         </div>
       </div>
       <div class="product product-n8">
@@ -118,7 +122,7 @@
           onmouseout="this.src='images/Aircrafts/Eurofighter-Typhoon.png'" />
         <div class="price_cart">
           <h3>$125M</h3>
-          <a href="#" class="cart-button">Add to cart</a>
+          <a href="#" class="addto-cart-btn">Add to cart</a>
         </div>
       </div>
 
@@ -129,13 +133,32 @@
           onmouseout="this.src='images/Aircrafts/Mig29.png'" />
         <div class="price_cart">
           <h3>$6M</h3>
-          <a href="#" class="cart-button">Add to cart</a>
+          <a href="#" class="addto-cart-btn">Add to cart</a>
         </div>
-      </div>
-    </section>
-    <footer></footer>
+      </div> -->
+    </section> 
+    <footer>
+
+      <!-- TEST  DOM FROM CART  -->
+      <div class="cart-overlay"> 
+      <div class="cart-container">
+        <button class="close_cart-btn">Close</button>
+        <div class="cart"></div>
+        <div class="cart-content">
+        </div>
+        <div class="cart-footer">
+          <h3>Your total: $<span class="cart-total"></span>M</h3>
+          <button class="clear-cart-btn">Clear cart</button>
+        </div>
+     </div> 
+   
+        <!-- TEST  -->
+
+
+    </footer>
   </main>
-  <script src="main.js"></script>
+  <script src="app.js"></script>
+  
 </body>
 
 </html>

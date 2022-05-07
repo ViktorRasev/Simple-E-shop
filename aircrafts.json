@@ -1,0 +1,97 @@
+ [
+    {
+        "name": "Sukhoi Su-37",
+        "nickname": "Terminator",
+        "tag": "Su-37",
+        "price": 55,
+        "imgSrc": "images/Aircrafts/Su-37.png",
+        "blueprint": "images/Aircrafts/Blueprint-sukhoi_su_37.jpg",
+        "inCart": 0,
+        "id": "1"
+    },
+    {
+        "name": "Sukhoi Su-47",
+        "nickname": "Berkut",
+        "tag": "Su-47",
+        "price": 70,
+        "imgSrc": "images/Aircrafts/Su-47.png",
+        "blueprint": " images/Aircrafts/Blueprin-Su-47.jpg",
+        "inCart": 0,
+        "id": "2"
+    },
+    {
+        "name": "Sukhoi Su-57",
+        "nickname": "Felon",
+        "tag": "Su-57",
+        "price": 100,
+        "imgSrc": "images/Aircrafts/Su-57.png",
+        "blueprint": "images/Aircrafts/Blueprint-Su-57.png",
+        "inCart": 0,
+        "id": "3"
+    },
+    {
+        "name": "F-22 Raptor",
+        "nickname": "",
+        "tag": "f-22",
+        "price": 150,
+        "imgSrc": "images/Aircrafts/f-22.png",
+        "blueprint": "images/Aircrafts/Blueprint-F22.png",
+        "inCart": 0,
+        "id": "4"
+    },
+    {
+        "name": "F-14 Tomcat",
+        "nickname": "",
+        "tag": "F14",
+        "price": 50,
+        "imgSrc": "images/Aircrafts/F14.png",
+        "blueprint": "images/Aircrafts/Blueprint-F14.jpg",
+        "inCart": 0,
+        "id": "5"
+    },
+    {
+        "name": "F-16 Fighting Falcon",
+        "nickname": "Viper",
+        "tag": "F16",
+        "price": 30,
+        "imgSrc": "images/Aircrafts/F16.png",
+        "blueprint": "images/Aircrafts/Blueprint-F16.jpg",
+        "inCart": 0,
+        "id": "6"
+    },
+    {
+        "name": "JAS 39 Gripen",
+        "nickname": "",
+        "tag": "Saab-gripen",
+        "price": 40,
+        "imgSrc": "images/Aircrafts/Saab-gripen.png",
+        "blueprint": "images/Aircrafts/Blueprint-jas39-Gripen.png",
+        "inCart": 0,
+        "id": "7"
+    },
+    {
+        "name": "Eurofighter Typhoon",
+        "nickname": "",
+        "tag": "Eurofighter-Typhoon",
+        "price": 125,
+        "imgSrc": "images/Aircrafts/Eurofighter-Typhoon.png",
+        "blueprint": "images/Aircrafts/Blueprint-Eurofighter-typhoon.jpg",
+        "inCart": 0,
+        "id": "8"
+    },
+    {
+        "name": "Mig-29",
+        "nickname": "Fulcrum",
+        "tag": "Mig29",
+        "price": 6,
+        "imgSrc": "images/Aircrafts/Mig29.png",
+        "blueprint": "images/Aircrafts/BLueprint-mig29.png",
+        "inCart": 0,
+        "id": "9"
+    }
+]
+
+
+
+
+

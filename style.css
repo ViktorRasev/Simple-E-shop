@@ -177,6 +177,7 @@ header {
   z-index: 2;
   transition: var(--mainTransition);
   visibility: hidden;
+  overscroll-behavior: none;
 
 }
 
@@ -206,19 +207,19 @@ header {
 }
 
 .cart-content {
-  position: relative;
+  /* position: relative; */
   max-width: 1000px; 
   margin: 70px auto;
 
 }
 
-.close_cart-btn { 
+/* .close_cart-btn { 
   position: absolute;
   right: 0;
   top: -80px;
   width:2rem ;
   height:2rem ;
-}
+} */
 
 .cart-item {
   position: relative;

@@ -110,6 +110,7 @@ class UI {
   showCart() {
     cartOverlay.classList.add("transparentBcg");
     cartContainer.classList.add("showCart");
+    document.querySelector('body').style.overflow = "hidden"
   }
   setupAPP() {
     cart = Storage.getCart();
@@ -124,6 +125,7 @@ class UI {
   hideCart() {
     cartOverlay.classList.remove("transparentBcg");
     cartContainer.classList.remove("showCart");
+    document.querySelector('body').style.overflow = "scroll"
   }
   cartLogic() {
     // clear cart button

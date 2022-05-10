@@ -297,7 +297,7 @@ ion-icon[name="trash-outline"] {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  max-width: 1000px;
+  max-width: 900px;
 }
 
 .cart-footer ul {
@@ -310,18 +310,19 @@ ion-icon[name="trash-outline"] {
 }
 
 .free-shipping {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   color: rgb(18, 155, 18);
 }
 ion-icon[name="airplane-outline"] {
-  padding-left: 10px;
-  font-size: 30px;
+position: absolute;
+top:-2px;
+right: -40px;
+font-size: 2rem;
+
 }
 
 .close_clear-cart {
   display: flex;
-  /* align-items: center; */
 }
 /* BTN  */
 .close_cart-btn,
@@ -329,11 +330,15 @@ ion-icon[name="airplane-outline"] {
 .order-btn {
   position: relative;
   padding: 10px 20px 10px 35px;
-  margin-right: 30px;
+  margin: 20px ;
   background-color: black;
   color: white;
   border-radius: 10px;
   border: none;
+}
+
+.close_cart-btn{
+  margin-right: 30px;
 }
 
 .close_cart-btn img {
@@ -365,6 +370,8 @@ ion-icon[name="checkmark-outline"] {
   background-color: rgba(0, 0, 0, 0.719);
 }
 
+
+/* RESPONSIVITY FOR CART =================================  */
 @media (max-width: 600px) {
   .cart-item {
     position: relative;
@@ -406,4 +413,26 @@ ion-icon[name="checkmark-outline"] {
     border-top-right-radius: 0;
     border: none;
   }
+}
+
+
+/* RESPOSIVITY FOR CART BUTTONS  */
+@media (max-width: 400px) {
+  h3 { 
+    font-size:.9rem;
+  }
+
+  .cart-footer-buttons  { 
+    position: relative;
+    width: 100%;
+   margin: 0 auto;
+  }
+  .order-btn { 
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width:100%;
+    margin: 20px auto;
+  }
+  
 }

@@ -275,7 +275,9 @@ ion-icon[name="arrow-down-outline"] {
   right: 0;
   height: 100%;
   width: 4rem;
-  background-color: rgba(216, 216, 216, 0.484);
+  /* background-color: rgba(216, 216, 216, 0.484); */
+  background-color: #000;
+  color: #fff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border: none;
@@ -289,6 +291,7 @@ ion-icon[name="trash-outline"] {
 .remove-item-btn:hover {
   transition: var(--mainTransition);
   background-color: rgb(239, 1, 1);
+  color: #000;
   cursor: pointer;
 }
 
@@ -313,7 +316,7 @@ ion-icon[name="trash-outline"] {
 
 .free-shipping {
   position: relative;
-  color: rgb(18, 155, 18);
+  color: rgb(8, 142, 8);
 }
 ion-icon[name="airplane-outline"] {
 position: absolute;
@@ -338,6 +341,11 @@ font-size: 2rem;
   border-radius: 10px;
   border: none;
 }
+.order-btn{
+  background-color: rgb(8, 142, 8);
+}
+
+
 
 .close_cart-btn{
   margin-right: 30px;
@@ -390,7 +398,6 @@ ion-icon[name="checkmark-outline"] {
     flex-direction: row;
     align-items: center;
     width: 6rem;
-    /* margin-left: 1rem; */
     justify-content: space-around;
   }
 
@@ -409,7 +416,6 @@ ion-icon[name="checkmark-outline"] {
     top: 80%;
     height: 4rem;
     width: 100%;
-    background-color: rgb(255, 0, 0);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 0;

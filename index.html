@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="normalize.css" />
   <link rel="stylesheet" href="style.css" />
-  <title>Document</title>
+  <title>Aviato</title>
 </head>
 
 <body>
@@ -31,120 +31,18 @@
     </div>
   </header>
   <main>
+  
     <section class="products">
-<!-- 
-      <div class="product product-n1">
-        <h2>Sukhoi Su-37</h2>
-        <h4>"Terminator"</h4>
-        <img src="images/Aircrafts/Su-37.png" 
-        onmouseover="this.src='images/Aircrafts/Blueprint-sukhoi_su_37.jpg'"
-          onmouseout="this.src='images/Aircrafts/Su-37.png'" />
-        <div class="price_cart">
-          <h3>$55M</h3>
-          <a href="#" class="addto-cart-btn">Add to cart</a>
-        </div>
-      </div>
-      </div>
-
-      <div class="product product-n2">
-        <h2>Sukhoi Su-47</h2>
-        <h4>"Berkut"</h4>
-        <img src="images/Aircrafts/Su-47.png" 
-        onmouseover="this.src='images/Aircrafts/Blueprin-Su-47.jpg'"
-          onmouseout="this.src='images/Aircrafts/Su-47.png'" />
-        <div class="price_cart">
-          <h3>$70M</h3>
-          <a href="#" class="addto-cart-btn">Add to cart</a>
-        </div>
-      </div>
-
-      <div class="product product-n3">
-        <h2>Sukhoi Su-57</h2>
-        <h4>"Felon"</h4>
-        <img src="images/Aircrafts/Su-57.png" 
-        onmouseover="this.src='images/Aircrafts/Blueprint-Su-57.png'"
-          onmouseout="this.src='images/Aircrafts/Su-57.png'"/>
-        <div class="price_cart">
-          <h3>$100M</h3>
-          <a href="#" class="addto-cart-btn">Add to cart</a>
-        </div>
-      </div>
-
-      <div class="product product-n4">
-        <h2>F-22 Raptor</h2>
-        <h4>""</h4>
-        <img src="images/Aircrafts/f-22.png" 
-        onmouseover="this.src='images/Aircrafts/Blueprint-F22 .png'"
-          onmouseout="this.src='images/Aircrafts/f-22.png'" />
-        <div class="price_cart">
-          <h3>$150M</h3>
-          <a href="#" class="addto-cart-btn">Add to cart</a>
-        </div>
-      </div>
-      <div class="product product-n5">
-        <h2>F-14 Tomcat</h2>
-        <h4>""</h4>
-        <img src="images/Aircrafts/F14.png" 
-        onmouseover="this.src='images/Aircrafts/Blueprint-F14.jpg'"
-          onmouseout="this.src='images/Aircrafts/F14.png'"/>
-        <div class="price_cart">
-          <h3>$50M</h3>
-          <a href="#" class="addto-cart-btn">Add to cart</a>
-        </div>
-      </div>
-      <div class="product product-n6">
-        <h2>F-16 Fighting Falcon</h2>
-        <h4>"Viper"</h4>
-        <img src="images/Aircrafts/F16.png"
-         onmouseover="this.src='images/Aircrafts/Blueprint-F16.jpg'"
-          onmouseout="this.src='images/Aircrafts/F16.png'" />
-        <div class="price_cart">
-          <h3>$30M</h3>
-          <a href="#" class="addto-cart-btn">Add to cart</a>
-        </div>
-      </div>
-      <div class="product product-n7">
-        <h2>JAS 39 Gripen</h2>
-        <h4>""</h4>
-        <img src="images/Aircrafts/Saab-gripen.png" 
-        onmouseover="this.src='images/Aircrafts/Blueprint-jas39-Gripen.png'"
-          onmouseout="this.src='images/Aircrafts/Saab-gripen.png'" />
-        <div class="price_cart">
-          <h3>$40M</h3>
-          <a href="#" class="addto-cart-btn">Add to cart</a>
-        </div>
-      </div>
-      <div class="product product-n8">
-        <h2>Eurofighter Typhoon</h2>
-        <h4>""</h4>
-        <img src="images/Aircrafts/Eurofighter-Typhoon.png"
-          onmouseover="this.src='images/Aircrafts/Blueprint-Eurofighter-typhoon.jpg'"
-          onmouseout="this.src='images/Aircrafts/Eurofighter-Typhoon.png'" />
-        <div class="price_cart">
-          <h3>$125M</h3>
-          <a href="#" class="addto-cart-btn">Add to cart</a>
-        </div>
-      </div>
-
-      <div class="product product-n9">
-        <h2>Mig-29</h2>
-        <h4>"Fulcrum"</h4>
-        <img src="images/Aircrafts/Mig29.png" onmouseover="this.src='images/Aircrafts/BLueprint-mig29.png'"
-          onmouseout="this.src='images/Aircrafts/Mig29.png'" />
-        <div class="price_cart">
-          <h3>$6M</h3>
-          <a href="#" class="addto-cart-btn">Add to cart</a>
-        </div>
-      </div> -->
     </section> 
     <footer>
 
       <!-- TEST  DOM FROM CART  -->
       <div class="cart-overlay"> 
       <div class="cart-container">
-        <button class="close_cart-btn">Close</button>
+       
         <div class="cart"></div>
         <div class="cart-content">
+          <button class="close_cart-btn"><ion-icon name="close-outline" ></ion-icon></button>
         </div>
         <div class="cart-footer">
           <h3>Your total: $<span class="cart-total"></span>M</h3>
@@ -154,11 +52,13 @@
    
         <!-- TEST  -->
 
-
     </footer>
   </main>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
   <script src="app.js"></script>
-  
+ 
 </body>
 
 </html>

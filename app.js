@@ -98,12 +98,12 @@ class UI {
     div.innerHTML = ` <img class ="thumbnail-in-cart" src="${item.imgSrc}"/>
                         <span class="product-in-cart-name">${item.name}</span>
                             <div class="increase_decrease-amount">
-                                <button class="increase-amount" data-id=${item.id}>+</button>
+                                <button class="increase-amount" data-id=${item.id}><ion-icon name="arrow-up-outline"></ion-icon></button>
                                 <p class="item-amount">${item.amount}</p>
-                                <button class="decrease-amount" data-id=${item.id}>-</button>
-                                <button class="remove-item" data-id=${item.id}>Remove</button>
+                                <button class="decrease-amount" data-id=${item.id}><ion-icon name="arrow-down-outline"></ion-icon></button>
                          </div>
                      <div class="product-in-cart-price">$${item.price}M</div>
+                     <button class="remove-item-btn" data-id=${item.id}> <ion-icon name="trash-outline"></ion-icon></button>
                     `;
     cartContent.appendChild(div);
   }
@@ -132,10 +132,10 @@ class UI {
     });
     // cart functionality
     cartContent.addEventListener("click", (event) => {
-      if (event.target.classList.contains("remove-item")) {
+      if (event.target.classList.contains("remove-item-btn")) {
         let removeItem = event.target;
         let id = removeItem.dataset.id;
-        cartContent.removeChild(removeItem.parentElement.parentElement);
+        cartContent.removeChild(removeItem.parentElement);
         this.removeItem(id);
       } else if (event.target.classList.contains("increase-amount")) {
         let increaseAmount = event.target;
@@ -164,7 +164,6 @@ class UI {
   clearCart() {
     let cartItems = cart.map((item) => item.id);
     cartItems.forEach((id) => this.removeItem(id));
-    console.log(cartContent.children);
 
     while (cartContent.children.length > 0) {
       cartContent.removeChild(cartContent.children[0]);

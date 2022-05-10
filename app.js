@@ -103,7 +103,7 @@ class UI {
                                 <button class="decrease-amount" data-id=${item.id}><ion-icon name="arrow-down-outline"></ion-icon></button>
                          </div>
                      <div class="product-in-cart-price">$${item.price}M</div>
-                     <button class="remove-item-btn" data-id=${item.id}> <ion-icon name="trash-outline"></ion-icon></button>
+                     <button class="remove-item-btn" data-id=${item.id}><ion-icon name="trash-outline"></ion-icon></button>
                     `;
     cartContent.appendChild(div);
   }

@@ -34,25 +34,31 @@
   
     <section class="products">
     </section> 
-    <footer>
-
+  
       <!-- CART  -->
       <div class="cart-overlay"> 
       <div class="cart-container">
-        <button class="close_cart-btn"><ion-icon name="close-outline" ></ion-icon></button>
+       
         <div class="cart"></div>
         <div class="cart-content">
         
         </div>
         <div class="cart-footer">
-          <h3>Your total: $<span class="cart-total"></span>M</h3>
-          <button class="clear-cart-btn">Clear cart</button>
+          <ul class="cart-footer-text">
+            <li> <h3 class="free-shipping">Free Shiping<ion-icon name="airplane-outline"></ion-icon></h3></li>
+            <li> <h3>Your total: $<span class="cart-total"></span>M</h3></li>
+          </ul>
+
+          <ul  class="cart-footer-buttons">
+            <div class="close_clear-cart">
+            <li><button class="close_cart-btn"><img src="images/211652_close_icon.svg">Close cart</button></li>
+            <li><button class="clear-cart-btn"><ion-icon class="trash-clear-all"name="trash-outline"></ion-icon>Clear cart</button></li>
+          </div>
+            <li><button class="order-btn"><ion-icon name="checkmark-outline"></ion-icon>Order</button></li>
+          </ul>
         </div>
      </div> 
    
-        <!-- TEST  -->
-
-    </footer>
   </main>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

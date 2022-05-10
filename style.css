@@ -149,7 +149,9 @@ header {
   color: #fff;
   padding: 7px 15px;
   border-radius: 8px;
+  border: none;
   cursor: pointer;
+  
 }
 .addto-cart-btn:hover {
   background-color: rgba(0, 0, 0, 0.719);
@@ -194,7 +196,7 @@ header {
 .cart-content {
   /* position: relative; */
   max-width: 1000px;
-  margin: 70px auto;
+  margin: 50px auto;
 }
 
 ion-icon[name="arrow-forward-outline"] {
@@ -421,7 +423,9 @@ ion-icon[name="checkmark-outline"] {
   h3 { 
     font-size:.9rem;
   }
-
+  .close_clear-cart {
+    margin-bottom: 50px;
+  }
   .cart-footer-buttons  { 
     position: relative;
     width: 100%;

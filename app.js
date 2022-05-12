@@ -9,11 +9,16 @@ const cartAmount = document.querySelector(".cart-amount");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 const productsDOM = document.querySelector(".products");
+const searchBar = document.querySelector(".search-bar-input")
+
+
+
 
 // CART
 let cart = [];
 // BUTTONS
 let buttonsDOM = [];
+
 
 // GETTING THE PRODUCT
 class Products {
@@ -27,6 +32,9 @@ class Products {
     }
   }
 }
+
+//     // SEARCH BAR <-==---------------
+
 
 // DISPLAY PRODUCTS
 class UI {
@@ -49,7 +57,44 @@ class UI {
       `;
     });
     productsDOM.innerHTML = result;
+
+
+
+  // DISPLAY ONLY SEARCHED PRODUCTS 
+    const filters = {
+      searchingText: ""
+    }
+      searchBar.addEventListener("input", (e) => { 
+        filters.searchingText = e.target.value   
+        renderProducts(data, filters)
+      })
+    
+      let renderProducts = function(ourProducts, WeSearching) {
+        let ourResults = ourProducts.filter((product) => { 
+          return product.name.toLowerCase().includes(WeSearching.searchingText.toLowerCase())
+        })
+     
+        let filteredResults = ""
+        ourResults.forEach((item) => { 
+          filteredResults += `
+          <div class="product">
+          <h2>${item.name}</h2>
+          <h4>"${item.nickname}"</h4>
+          <img src="${item.imgSrc}" 
+          onmouseover="this.src='${item.blueprint}'"
+          onmouseout="this.src='${item.imgSrc}'" />
+          <div class="price_cart">
+            <h3>$${item.price}M</h3>
+            <button data-id="${item.id}" class="addto-cart-btn">Add to cart</button>
+          </div>
+        </div>
+        </div>
+        `;
+        })
+      productsDOM.innerHTML = filteredResults
+      }
   }
+
   getAddToCartBtns() {
     const addToCartButtons = [...document.querySelectorAll(".addto-cart-btn")];
     buttonsDOM = addToCartButtons;
@@ -83,15 +128,16 @@ class UI {
   setCartValues(cart) {
     let tempTotal = 0;
     let itemsTotal = 0;
-    // console.log(itemsTotal)
     cart.map((item) => {
       tempTotal += item.price * item.amount;
       itemsTotal += item.amount;
-      // console.log(item.price * item.amount)
     });
     cartTotal.innerText = tempTotal;
     cartAmount.innerText = itemsTotal;
   }
+
+
+  
   addCartItem(item) {
     const div = document.createElement("div");
     div.classList.add("cart-item");
@@ -107,6 +153,12 @@ class UI {
                     `;
     cartContent.appendChild(div);
   }
+
+  
+  
+ 
+
+
   showCart() {
     cartOverlay.classList.add("transparentBcg");
     cartContainer.classList.add("showCart");
@@ -122,6 +174,7 @@ class UI {
   populateCart(cart) {
     cart.forEach((item) => this.addCartItem(item));
   }
+
   hideCart() {
     cartOverlay.classList.remove("transparentBcg");
     cartContainer.classList.remove("showCart");

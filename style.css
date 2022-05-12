@@ -446,3 +446,5 @@ ion-icon[name="checkmark-outline"] {
   }
   
 }
+
+.is-hidden { display: none;}

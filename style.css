@@ -194,7 +194,6 @@ header {
 }
 
 .cart-content {
-  /* position: relative; */
   max-width: 1000px;
   margin: 50px auto;
 }
@@ -447,4 +446,6 @@ ion-icon[name="checkmark-outline"] {
   
 }
 
-.is-hidden { display: none;}
+.is-hidden { 
+  display: none;
+}

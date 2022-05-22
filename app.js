@@ -12,8 +12,6 @@ const productsDOM = document.querySelector(".products");
 const searchBar = document.querySelector(".search-bar-input")
 
 
-
-
 // CART
 let cart = [];
 // BUTTONS
@@ -33,15 +31,13 @@ class Products {
   }
 }
 
-//     // SEARCH BAR <-==---------------
-
 
 // DISPLAY PRODUCTS
 class UI {
   displayProducts(data) {
-    let result = "";
+    let singleProduct = 0
     data.forEach((item) => {
-      result += `
+      productsDOM.innerHTML += `
         <div class="product">
         <h2>${item.name}</h2>
         <h4>"${item.nickname}"</h4>
@@ -55,46 +51,26 @@ class UI {
       </div>
       </div>
       `;
+      singleProduct = document.querySelectorAll(".product")
     });
-    productsDOM.innerHTML = result;
 
 
-
-  // DISPLAY ONLY SEARCHED PRODUCTS 
-    const filters = {
-      searchingText: ""
-    }
-      searchBar.addEventListener("input", (e) => { 
-        filters.searchingText = e.target.value   
-        renderProducts(data, filters)
-      })
-    
-      let renderProducts = function(ourProducts, WeSearching) {
-        let ourResults = ourProducts.filter((product) => { 
-          return product.name.toLowerCase().includes(WeSearching.searchingText.toLowerCase())
-        })
+// DISPLAY ONLY SEARCHED PRODUCTS 
+    searchBar.addEventListener("keyup", (e) => { 
+      e.preventDefault()
+     let searchedValue = e.target.value
      
-        let filteredResults = ""
-        ourResults.forEach((item) => { 
-          filteredResults += `
-          <div class="product">
-          <h2>${item.name}</h2>
-          <h4>"${item.nickname}"</h4>
-          <img src="${item.imgSrc}" 
-          onmouseover="this.src='${item.blueprint}'"
-          onmouseout="this.src='${item.imgSrc}'" />
-          <div class="price_cart">
-            <h3>$${item.price}M</h3>
-            <button data-id="${item.id}" class="addto-cart-btn">Add to cart</button>
-          </div>
-        </div>
-        </div>
-        `;
-        })
-      productsDOM.innerHTML = filteredResults
-      }
+    for(let i = 0; i < singleProduct.length; i++) { 
+        if(singleProduct[i].innerHTML.toLowerCase().includes(searchedValue.toLowerCase())) { 
+            singleProduct[i].classList.remove('is-hidden')
+        }else { 
+          singleProduct[i].classList.add("is-hidden")
+        }
+     }
+   })
   }
 
+  
   getAddToCartBtns() {
     const addToCartButtons = [...document.querySelectorAll(".addto-cart-btn")];
     buttonsDOM = addToCartButtons;
@@ -107,6 +83,7 @@ class UI {
       }
 
       button.addEventListener("click", (e) => {
+       
         e.target.innerText = "In Cart";
         e.target.disabled = true;
         // GET PRODUCT FROM DATA/PRODUCTS
@@ -119,11 +96,12 @@ class UI {
         this.setCartValues(cart);
         // DISPLAY CART ITEM
         this.addCartItem(cartItem);
-        // SHOW THE CART AFTER ADDING ITEM TO IT
+        // SHOW THE CART AFTER ADDING ITEM 
         // this.showCart();  
       });
     });
   }
+
 
   setCartValues(cart) {
     let tempTotal = 0;
@@ -135,7 +113,6 @@ class UI {
     cartTotal.innerText = tempTotal;
     cartAmount.innerText = itemsTotal;
   }
-
 
   
   addCartItem(item) {
@@ -155,10 +132,6 @@ class UI {
   }
 
   
-  
- 
-
-
   showCart() {
     cartOverlay.classList.add("transparentBcg");
     cartContainer.classList.add("showCart");
@@ -275,4 +248,3 @@ document.addEventListener("DOMContentLoaded", () => {
       ui.cartLogic();
     });
 });
-

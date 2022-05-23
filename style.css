@@ -47,6 +47,11 @@ header {
   border: #fff 2px solid;
   border-radius: 10px;
   height: 2.5rem;
+  
+}
+.shopping-cart:hover { 
+  cursor: pointer;
+  background-color: rgb(66, 66, 66);
 }
 
 .shopping-cart img {

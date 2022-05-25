@@ -40,12 +40,12 @@
         "id": "4"
     },
     {
-        "name": "F-14 Tomcat",
-        "nickname": "",
-        "tag": "F14",
-        "price": 50,
-        "imgSrc": "images/Aircrafts/F14.png",
-        "blueprint": "images/Aircrafts/Blueprint-F14.jpg",
+        "name": "F/A-18 Hornet",
+        "nickname": "Rhino",
+        "tag": "F18",
+        "price": 65,
+        "imgSrc": "images/Aircrafts/f-a-18-hornet.png",
+        "blueprint": "images/Aircrafts/F18-Blueprint.png",
         "inCart": 0,
         "id": "5"
     },

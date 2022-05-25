@@ -129,7 +129,7 @@ header {
   align-items: center;
   justify-content: center;
   width: 90%;
-  height: 330px;
+  /* height: 330px; */
   margin: 10px 5%;
   overflow: hidden;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 1px 2px 0 rgb(0 0 0 / 10%);
@@ -169,6 +169,7 @@ header {
 .addto-cart-btn:hover {
   background-color: rgba(0, 0, 0, 0.719);
 }
+
 /* SHOPPING CART <--------------------  */
 
 .cart-overlay {
@@ -287,7 +288,6 @@ ion-icon[name="arrow-down-outline"] {
   right: 0;
   height: 100%;
   width: 4rem;
-  /* background-color: rgba(216, 216, 216, 0.484); */
   background-color: #000;
   color: #fff;
   border-top-right-radius: 10px;
